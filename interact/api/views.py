@@ -23,9 +23,6 @@ def singledownload(request):
         # pythondata = request.data
         url = pythondata.get('url')
         print(url)
-        if url == '':
-            
-            return JsonResponse({'emptys':'please enter url'},status=status.HTTP_204_NO_CONTENT)
         serlizer = geturlserlizer(data=pythondata)
         if serlizer.is_valid():
             # serlizer.save()

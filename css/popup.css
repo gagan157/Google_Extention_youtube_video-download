@@ -1,5 +1,31 @@
-.bodyss{
-    margin-right: 234px !important;
-    background-color: #f4f4f4;
+body{
+    margin: 15px !important;
+    background-color: ivory;
 }
-
+.bodyss{
+    inline-size: max-content !important;
+}
+.head{
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 20px 20px 0px 0px;
+    padding: 3px 24px;
+}
+h1{
+    font-size: 25px;
+}
+.bi{
+    color: red;
+}
+.main{
+    text-align: -webkit-center;
+    background-color: lightgrey;
+    border-radius: 0px 0px 30px 30px;
+    padding: 10px 0px;
+}
+.stats{
+    text-align: -webkit-center;
+}
+#status{
+    color: red
+}

@@ -1,49 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">   
-    <link rel="stylesheet" href="css/all.min.css">   
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/popup.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
 
-    <title>Downloads Youtube Videos</title>
+    <title>Youtube Downloader</title>
+  </head>
+  <body>
+    <div class="container bodyss">
+      <div class="container my-3 shadow head">
+        <h4><i class="bi bi-youtube"></i> Youtube Downloader</h4>
+      </div>
+      <div class="stats"><p id="status" class="d-none">Downloading....</p>
+        <p id="vidstatus" class=""></p></div>
 
-</head>
-<body>
-    <div class="container-fluid bodyss">
-    <div class="head">
-    <i class="fab fa-youtube"></i><h1>Download Youtube Videos</h1>
-    </div>
-    <div>
-        save as 
-    </div>
-    <div class="my-2">
-        <button class="btn btn-primary" type="button" id="btnsingleurl">Youtube url</button>
+      <div class="container shadow p-3 mb-5 main">
+        <div class="row">
+          <div class="col">
+            <div class="my-2">
+              <button class="btn btn-primary" type="button" id="btnsingleurl">
+                Youtube <i class="bi bi-link-45deg"></i>url
+              </button>
 
-        <div class="d-none" id="single">
-            
-            <input class="form-control" type="text" id="inpsingleurl" placeholder="Enter Single Url Video">
-            <button class="btn btn-primary my-1" type="button" id="btn1">Download</button>
-            <p id="status" class="d-none">Downloading....</p>
-            <p id="vidstatus" class=""></p>
-            
+              <div class="d-none" id="single">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="inpsingleurl"
+                  placeholder="Enter Single Url Video"
+                />
+                <button class="btn btn-primary my-1" type="button" id="btn1">
+                  Download <i class="bi bi-download"></i>
+                </button>
+                
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <p id="demo"></p>
-    <div class="my-2">
-        <button class="btn btn-primary" type="button" id="btnplaylisturl">Youtube Playlist url</button>
 
-        <div class="d-none" id="playlist">
-            <input class="form-control" type="text" id="inpplaylisturl" placeholder="Enter Playlist Url Video">
-            <button class="btn btn-primary my-1" type="submit" id="btn2">Download</button>
+        <div class="row">
+          <div class="col">
+            <div class="my-2">
+              <button class="btn btn-primary" type="button" id="btnplaylisturl">
+                Youtube Playlist <i class="bi bi-link-45deg"></i>url
+              </button>
+
+              <div class="d-none" id="playlist">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="inpplaylisturl"
+                  placeholder="Enter Playlist Url Video"
+                />
+                <button class="btn btn-primary my-1" type="button" id="btn2">
+                     Download <i class="bi bi-download"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-</body>
-<script src="js/popup.js"></script>
-<script src="js/all.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+  </body>
+  <script src="js/popup.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </html>

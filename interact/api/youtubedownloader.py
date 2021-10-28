@@ -15,7 +15,7 @@ def ytdownload(urldata):
     st = yt.streams.filter(res="720p",file_extension='mp4').get_by_itag(22)
     print("Downloading...")
     # st.download(save_path)
-    vidinfo = f"file name is {title} | Views {vidviews} | Duration {vidlenght} | Rating {vidrating}"
+    vidinfo = f"File name is {title} | Views {vidviews} | Duration {vidlenght} | Rating {vidrating}"
     vidstatus = 'Download Completed'
     return vidinfo,vidstatus
 
